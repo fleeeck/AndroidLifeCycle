@@ -43,4 +43,10 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(getApplicationContext(), "Destroyed!", Toast.LENGTH_SHORT).show();
     }
+    
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(getApplicationContext(), "Restarted!", Toast.LENGTH_SHORT).show();
+    }
 }
